@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import UpcomingEvents from "./upcomingEvents";
+import UpcomingEvents from "./UpcomingEvents";
 import "../styles/errorPage.css";
 import { SearchX } from "lucide-react";
 
