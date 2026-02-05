@@ -18,7 +18,6 @@ import { LanguageProvider } from "./context/LanguageContext";
 import MainLayout from "./layouts/MainLayout";
 
 import { EventProvider } from "./context/EventContext";
-import ErrorPage from "./components/errorPage.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -40,8 +39,6 @@ const router = createBrowserRouter(
         }
       />
 
-      <Route path="*" element={<ErrorPage />} />
-
       <Route
         path="/events/:pageSlug"
         element={
@@ -62,8 +59,8 @@ const router = createBrowserRouter(
           </Suspense>
         }
       />
-    </Route>,
-  ),
+    </Route>
+  )
 );
 
 function App() {
