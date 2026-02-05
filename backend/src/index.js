@@ -30,6 +30,9 @@ app.use(express.static("public"));
 
 const client = new Client({
   connectionString: process.env.PGURI,
+  ssl: {
+    rejectUnauthorized: false,
+  },
 });
 
 client
