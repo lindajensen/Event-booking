@@ -174,6 +174,10 @@ app.get("/api/events/:eventId/available-spots", async (request, response) => {
   }
 });
 
+app.get("/api/health", (req, res) => {
+  res.json({ status: "ok" });
+});
+
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
